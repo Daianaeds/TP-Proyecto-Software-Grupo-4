@@ -1,0 +1,100 @@
+.slider{
+    background-image: url("../../../public/assets/img/mc-donals-head.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.slider .link{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background: rgb(var(--orange-bg));
+    padding: .85rem 1.7rem;
+    border-radius: 40px;
+}
+.slider .link:hover{
+    background: rgb(var(--orange-bg-hover));
+}
+.services{
+    display: grid;
+    grid-template-rows: 30% 70%;
+    background: rgb(var(--slider-bg));
+}
+
+.services .title-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+
+}
+.services .list-services{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 2rem;
+}
+.services .list-services div{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 50% 10% 20%;
+    text-align: center;
+}
+.services .list-services div .link-img{
+    display: flex;
+    grid-column: 2/3;
+}
+.services .list-services div .link-img img{
+    aspect-ratio: 5 / 4;
+    width: 100%;
+    margin:auto;
+}
+.services .list-services div h3{
+    grid-column: 1/4;
+    font-size: 1.4rem;
+    padding: .5rem 0;
+}
+.services .list-services div p{
+    font-size: .9rem;
+    grid-column: 2/3;
+}
+
+
+@media (max-width: 1000px){
+    .services{
+        display: grid;
+        grid-template-rows: 15% 85%;
+    }
+    .services .list-services{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .services .list-services div{
+        display: grid;
+        grid-template-rows: 60% 15% 25%;
+        text-align: center;
+    }
+    .services .list-services div .link-img img{
+        width: 50%;
+    }
+}
+
+.promociones-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.promociones-item{
+    margin: 10px;
+}
+
+.promociones-item img{
+    height: 315px;
+}

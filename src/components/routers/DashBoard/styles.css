@@ -1,0 +1,18 @@
+.total-content{
+    height: calc(100vh - 72px);
+    width: 100%;
+    max-width: 1920px;
+    margin:0 auto;
+}
+h1,h2,h3,
+h4,h5,p{
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --orange-bg: 213,76,12;
+    --orange-bg-hover: 197, 70, 10;
+    --slider-bg: 244, 98, 58;
+    --header-bg-hover: 250, 91, 17;
+}
